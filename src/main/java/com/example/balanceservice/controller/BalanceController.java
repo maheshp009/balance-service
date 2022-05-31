@@ -30,7 +30,7 @@ public class BalanceController {
 //
 //    }
 
-    @PostMapping("/tutorials")
+    @PostMapping("/balance")
     public ResponseEntity<Balance> createBalance(@RequestBody Balance balance) {
         try {
             Balance _balance = balanceRepository.save(new Balance(balance.getId(), balance.getAmount(), balance.getCurrency(),
