@@ -19,15 +19,7 @@ public class Balance {
 
     }
 
-//    public Balance(String id, String amount, String currency, String accountId,String createdAt, String updatedAt  ){
-//        this.id = id;
-//        this.amount = amount;
-//        this.currency = currency;
-//        this.accountId = accountId;
-//        this.createdAt = createdAt;
-//        this.updatedAt = updatedAt;
-//
-//    }
+
 
     public Balance(String id , String amount , String currency , String accountId , String createdAt , String updatedAt , boolean b) {
 
