@@ -59,15 +59,6 @@ public class BalanceController {
 //            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 //        }
 //    }
-@GetMapping("/balance/{id}")
-public ResponseEntity<Balance> getBalanceById(@PathVariable("id") String id) {
-    Optional<Balance> balance = balanceRepository.findById(id);
-    if (balance.isPresent()) {
-        return new ResponseEntity<>(balance.get(), HttpStatus.OK);
-    } else {
-        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-    }
-}
 
     @GetMapping("/balance/accountsId/{accountId}")
     public ResponseEntity<Balance> getBalanceByAccountId(@PathVariable("accountId") String accountId) {
