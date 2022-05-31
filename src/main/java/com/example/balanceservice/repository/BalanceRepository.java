@@ -6,6 +6,10 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import java.util.List;
 
 public interface BalanceRepository extends MongoRepository<Balance, String> {
-//    List<Balance> findByid(String id);
-//    List<Balance> findByaccountID(String accountId);
+
+   // List<Balance> findByaccountID(String accontID);
+    Balance findByAccountId(String accountId);
+
+//   List<Balance> findByid(String id);
+// List<Balance> findByaccountID(String accountId);
 }
